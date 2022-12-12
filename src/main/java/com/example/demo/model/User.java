@@ -9,7 +9,7 @@ import java.util.Objects;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Long id;
     @Column
     private String name;
     @Column
@@ -25,7 +25,7 @@ public class User {
         this.personWatchedTheSupernatural = personWatchedTheSupernatural;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
@@ -40,7 +40,7 @@ public class User {
     public Boolean getPersonWatchedTheSupernatural() {
         return personWatchedTheSupernatural;
     }
-    public  void setId(int id) {
+    public  void setId(Long id) {
         this.id = id;
     }
     public void setName(String name) {
